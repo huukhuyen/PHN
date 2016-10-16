@@ -1,0 +1,54 @@
+.footer {
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    dl, dt, dd, ol, ul, li {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+        font-size: 100%;
+        vertical-align: baseline;
+        word-wrap: break-word;
+    }
+    width: 100%;
+    // height: 170px;
+    color: $color-a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    li{
+        line-height: 24px;
+    }
+    .content-footer {
+        padding: 30px;
+        position: relative;
+        bottom: 30px;
+        background: rgba(0, 0, 0, 0.4);
+        .title-ft {
+            padding: 10px 0;
+        }
+        .partner {
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            img {
+                max-width: 45px;
+            }
+        }
+    }
+    .copyright {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        // height: 37px;
+        padding: 8px 0;
+        color: $color-a;
+        background: rgba(0, 0, 0, 0.8);
+        i {
+            padding-right: 10px;
+            font-size: 22px;
+            color: $color-a;
+        }
+    }
+}
