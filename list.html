@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/owl.carousel.css" media="screen">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
 </head>
 
@@ -49,7 +50,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="content-nav">
-                                    <li><a class="hvr-underline-from-center" href="index.html">Trang chủ</a></li>
+                                    <li><a class="active" href="index.html">Trang chủ</a></li>
                                     <li><a class="hvr-underline-from-center" href="about.html">Giới thiệu</a></li>
                                     <li><a class="hvr-underline-from-center" href="list.html">Xây dựng</a></li>
                                 </ul>
@@ -99,7 +100,7 @@
             </div>
             <div class="container visible-sm visible-xs">
                 <div class="logo-mb">
-                    <a href=""><img src="images/logo.png" /></a>
+                    <a href="index.html"><img src="images/logo.png" /></a>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
@@ -124,10 +125,10 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-xs-12">
                         <div class="control-nav">
-                            <span>Menu</span> <i class="fa fa-bars"></i>
+                            <a href="" data-toggle="modal" data-target="#popup-form-search"><i class="fa fa-search left"></i></a>
+                            <span>Menu</span> <i class="fa fa-bars right"></i>
                         </div>
                         <nav class="nav-mb"></nav>
                     </div>
@@ -182,74 +183,123 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery1"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat2.jpg" data-fancybox-group="gallery1"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery1"></a>
+                                        <a class="fancybox" href="images/noithat2.jpg" data-fancybox-group="gallery1"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery2"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery2"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery2"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery2"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery3"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery3"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery3"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery3"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery4"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery4"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery4"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery4"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery5"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery5"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery5"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery5"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery6"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery6"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery6"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery6"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery7"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery7"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery7"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery7"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery8"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery8"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery8"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery8"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
                                     <div class="item-art">
-                                        <a href=""><img class="img-responsive" src="images/news1.jpg" alt="" /></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"><img src="images/news1.jpg" alt="" /></a>
                                         <div class="caption-news-art">
                                             <p><a href="#">Biệt thự Hải Đông</a></p>
                                         </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
+                                    <div class="item-art">
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"><img src="images/news1.jpg" alt="" /></a>
+                                        <div class="caption-news-art">
+                                            <p><a href="#">Biệt thự Hải Đông</a></p>
+                                        </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery9"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 pd_5">
+                                    <div class="item-art">
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery10"><img src="images/news1.jpg" alt="" /></a>
+                                        <div class="caption-news-art">
+                                            <p><a href="#">Biệt thự Hải Đông</a></p>
+                                        </div>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery10"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery10"></a>
+                                        <a class="fancybox" href="images/noithat.jpg" data-fancybox-group="gallery10"></a>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +317,7 @@
                             <p class="hidden-xs">Bản quyền © 2016 thuộc về Phúc Hoàng Ngọc</p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
+                    <div class="col-md-2 col-sm-6 col-xs-6">
                         <div class="title-ft">
                             <h2><a href="">Thông tin</a></h2>
                         </div>
@@ -277,7 +327,7 @@
                             <li><a href="">Hợp tác - liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="title-ft">
                             <h2><a href="">Liên hệ</a></h2>
                         </div>
@@ -302,7 +352,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright hidden-xs">
+            <div class="copyright">
                 <div class="container">
                     <h2><i class="fa fa-angle-double-up"></i>Công ty CP Tư vấn thiết kế & xây dựng Phúc hoàng ngọc</h2>
                 </div>
@@ -313,6 +363,7 @@
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/jquery.nicescroll.js" charset="utf-8"></script>
     <script src="js/owl.carousel.min.js" charset="utf-8"></script>
+    <script src="js/jquery.fancybox.js" charset="utf-8"></script>
     <script src="js/script.js" charset="utf-8"></script>
 </body>
 

@@ -6,10 +6,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.98);
     z-index: 999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     .logo-splash {
         position: absolute;
+        top: calc(50% - 90px);
+        left: calc(50% - 100px);
     }
 }

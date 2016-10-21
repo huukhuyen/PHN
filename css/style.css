@@ -54,6 +54,13 @@ article, aside, details, figure, footer, header, menu, nav, section, summary {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Times New Roman';
+  src: url("../fonts/MinionPro-MediumIt.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .wrap::after, .wrap .container::after {
   clear: both;
   content: " ";
@@ -210,6 +217,7 @@ input:focus {
 }
 
 .header .slogan {
+  font-size: 18px;
   color: #57a64b;
   font-family: "Times New Roman";
   font-weight: bold;
@@ -253,7 +261,7 @@ input:focus {
   width: 0;
   height: 0;
   bottom: 0;
-  left: 48%;
+  left: 45%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #da251d;
@@ -304,7 +312,7 @@ input:focus {
   width: 0;
   height: 0;
   bottom: 0;
-  left: 50%;
+  left: 45%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #da251d;
@@ -341,7 +349,7 @@ input:focus {
   border-bottom: 2px solid #da251d;
   color: #da251d;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
 }
 
 .header .nav-mb {
@@ -556,13 +564,12 @@ input:focus {
   height: 100%;
   background: rgba(0, 0, 0, 0.98);
   z-index: 999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .splash .logo-splash {
   position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% - 100px);
 }
 
 .red {
@@ -636,6 +643,8 @@ input:focus {
 }
 
 .content .camera_caption.fadeFromBottom .captitle h2 {
+  font-size: 48px;
+  text-transform: none;
   font-style: italic;
   font-weight: bold;
   font-family: "Times New Roman";
@@ -656,6 +665,7 @@ input:focus {
   padding-top: 125px;
   background: url("../images/slider1.jpg") center fixed;
   background-size: cover;
+  height: 100%;
 }
 
 .content-news blockquote,
@@ -791,6 +801,16 @@ input:focus {
   position: relative;
 }
 
+.content-news .content-body .item-art a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+  width: 100%;
+  height: 100%;
+}
+
 .content-news .content-body .item-art .caption-news-art {
   font-size: 16px;
   position: absolute;
@@ -798,16 +818,6 @@ input:focus {
   left: 10px;
   color: #ffffff;
   z-index: 2;
-}
-
-.content-news .content-body .item-art:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
-  width: 100%;
-  height: 100%;
 }
 
 .content-news .content-body .name-news {
@@ -875,6 +885,12 @@ input:focus {
 }
 
 @media only screen and (max-width: 768px) {
+  .header .social-mb {
+    display: none;
+  }
+  .content-news {
+    padding-top: 0;
+  }
   .content .camera_caption .captitle h2 {
     font-size: 1rem;
   }
@@ -893,10 +909,21 @@ input:focus {
   }
   .footer .content-footer {
     padding: 10px;
-    display: block !important;
     bottom: 0;
   }
   .footer .copyright {
     position: relative;
+  }
+}
+
+@media (min-width: 1500px) {
+  .content-news .content-body {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .content-news .content-body {
+    height: 900px;
   }
 }
